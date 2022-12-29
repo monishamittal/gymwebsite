@@ -1,0 +1,73 @@
+body {
+    padding: 50px;
+    font-family: verdana;
+    font-size: 13px;
+    line-height: 26px;
+  }
+  
+  .mysection {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: 
+      "decor heading"
+      "decor para"
+      "decor mybtn"
+      ;
+  }
+  .decor {
+    height:250px;
+    width: 250px;
+    /* background:gold; */
+    overflow:visible;
+    grid-area:decor;
+    
+    
+  }
+  .decor_outline {
+    height: 150px;
+    width: 150px;
+    border-top: 8px solid gold; 
+    border-left: 8px solid gold; 
+    
+    position: absolute;
+    margin-top:-20px;
+    margin-left: -20px;
+    z-index: 6;
+    
+  }
+  
+  h1 {
+    grid-area:heading;
+    margin:0px;
+    padding:0px;
+    font-size: 26px;
+  }
+  .mypara {
+    grid-area:para;
+    margin:0px;
+    padding:0px;
+    align-self: start;
+  }
+  .mybtn {
+    grid-area:mybtn;
+    max-width:150px;
+    max-height:60px;
+    border-radius: 100px;
+    background:royalblue;
+    outline:none;
+    border:0px;
+    color:white;
+    
+  }
+  .mybtn:hover {
+    background:gold;
+  }
+  .mybtn:active {
+    background:black;
+  }
+  .mybtn:focus{
+    background: grey;
+  }
+
+  
