@@ -311,3 +311,8 @@ background:none;
 border-radius:0px;
 border-color:#ffc20b;
 }
+
+.row {
+display: flex;
+justify-content: space-between;
+}

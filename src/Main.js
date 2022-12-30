@@ -78,16 +78,16 @@ const Main = () => {
 
         <Mentor />
       </div>
-      <Footer/>
+
 
       <br></br>
-        <center>
-          {" "}
-          <h1>Pricing</h1>
-        </center>
+      <center>
+        {" "}
+        <h1>Pricing</h1>
+      </center>
 
-        <Pricing />
-
+      <Pricing />
+      <Footer />
     </div>
   );
 };
